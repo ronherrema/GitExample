@@ -9,14 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var storyMaker = StoryMaker()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        // nil comment
-        // nil comment 2
+        changeText()
+       
     }
 
-
+    @IBOutlet weak var story: UITextView!
+    
+    @IBOutlet weak var adjective: UIButton!
+    @IBOutlet weak var verb: UIButton!
+    @IBOutlet weak var noun: UIButton!
+    @IBOutlet weak var the: UIButton!
+    
+    func changeText() {
+        noun.setTitle(storyMaker.chooseNoun(), for: .normal)
+        verb.setTitle(storyMaker.chooseVerb(), for: .normal)
+        adjective.setTitle(storyMaker.chooseAdjective(), for: .normal)
+    }
+    
+    @IBAction func sendText(_ sender: UIButton) {
+        story.text = story.text! + " " + (sender.titleLabel?.text)!
+        changeText()
+    }
 }
 

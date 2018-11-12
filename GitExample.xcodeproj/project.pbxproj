@@ -12,6 +12,7 @@
 		7382F1D62198D4D50062D249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7382F1D42198D4D50062D249 /* Main.storyboard */; };
 		7382F1D82198D4D70062D249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7382F1D72198D4D70062D249 /* Assets.xcassets */; };
 		7382F1DB2198D4D70062D249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7382F1D92198D4D70062D249 /* LaunchScreen.storyboard */; };
+		7382F2012198F0C40062D249 /* StoryMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7382F2002198F0C40062D249 /* StoryMaker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7382F1D72198D4D70062D249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7382F1DA2198D4D70062D249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7382F1DC2198D4D70062D249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7382F2002198F0C40062D249 /* StoryMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryMaker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				7382F1D02198D4D50062D249 /* AppDelegate.swift */,
 				7382F1D22198D4D50062D249 /* ViewController.swift */,
+				7382F2002198F0C40062D249 /* StoryMaker.swift */,
 				7382F1D42198D4D50062D249 /* Main.storyboard */,
 				7382F1D72198D4D70062D249 /* Assets.xcassets */,
 				7382F1D92198D4D70062D249 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				7382F1D32198D4D50062D249 /* ViewController.swift in Sources */,
 				7382F1D12198D4D50062D249 /* AppDelegate.swift in Sources */,
+				7382F2012198F0C40062D249 /* StoryMaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M6S76VG9E;
 				INFOPLIST_FILE = GitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8M6S76VG9E;
 				INFOPLIST_FILE = GitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
